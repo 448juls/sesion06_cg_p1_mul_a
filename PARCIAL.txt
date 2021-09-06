@@ -1,0 +1,123 @@
+
+<canvas id=canvas>
+<script>
+
+function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+
+
+    // Filled triangle
+    ctx.beginPath();
+    ctx.moveTo(40, 10);
+    ctx.lineTo(5, 50);
+    ctx.lineTo(55,60);
+    ctx.fillStyle = "#3377FF";
+    ctx.fill();
+
+
+    // Stroked triangle
+    ctx.beginPath();
+    ctx.moveTo(45, 10);
+    ctx.lineTo(60, 60);
+    ctx.lineTo(80, 40);
+    ctx.fillStyle = "#0251F0";
+    ctx.fill();
+
+    // Filled triangle
+    ctx.beginPath();
+    ctx.moveTo(44, 95);
+    ctx.lineTo(5, 55);
+    ctx.lineTo(55,65);
+    ctx.fillStyle = "#0245CC";
+    ctx.fill();
+
+    // Stroked triangle
+    ctx.beginPath();
+    ctx.moveTo(49, 95);
+    ctx.lineTo(60,65);
+    ctx.lineTo(80, 45);
+    ctx.fillStyle = "#0239A7";
+    ctx.fill();
+
+    //UNIDO
+
+    // Filled triangle
+    ctx.beginPath();
+    ctx.moveTo(135, 10);
+    ctx.lineTo(100, 50);
+    ctx.lineTo(150,60);
+    ctx.fillStyle = "#3377FF";
+    ctx.fill();
+
+
+    // Stroked triangle
+    ctx.beginPath();
+    ctx.moveTo(135, 10);
+    ctx.lineTo(150,60);
+    ctx.lineTo(170, 40);
+    ctx.fillStyle = "#0251F0";
+    ctx.fill();
+
+    // Filled triangle
+    ctx.beginPath();
+    ctx.moveTo(139, 90);
+    ctx.lineTo(100, 50);
+    ctx.lineTo(150,60);
+    ctx.fillStyle = "#0245CC";
+    ctx.fill();
+
+    // Stroked triangle
+    ctx.beginPath();
+    ctx.moveTo(139, 90);
+    ctx.lineTo(150,60);
+    ctx.lineTo(170, 40);
+    ctx.fillStyle = "#0239A7";
+    ctx.fill();
+
+   //TRANSFORMACION
+
+    ctx.translate(210, 110);
+    ctx.rotate((Math.PI / 180) * 25);
+    ctx.translate(-230, -115);
+
+    // Filled triangle
+    ctx.beginPath();
+    ctx.moveTo(230, 10);
+    ctx.lineTo(195, 50);
+    ctx.lineTo(245,60);
+    ctx.fillStyle = "#3377FF";
+    ctx.fill();
+
+
+    // Stroked triangle
+    ctx.beginPath();
+    ctx.moveTo(230, 10);
+    ctx.lineTo(245,60);
+    ctx.lineTo(265, 40);
+    ctx.fillStyle = "#0251F0";
+    ctx.fill();
+
+    // Filled triangle
+    ctx.beginPath();
+    ctx.moveTo(234, 90);
+    ctx.lineTo(195, 50);
+    ctx.lineTo(245,60);
+    ctx.fillStyle = "#0245CC";
+    ctx.fill();
+
+    // Stroked triangle
+    ctx.beginPath();
+    ctx.moveTo(234, 90);
+    ctx.lineTo(245,60);
+    ctx.lineTo(265, 40);
+    ctx.fillStyle = "#0239A7";
+    ctx.fill();
+    ctx.restore();
+    
+  }
+
+}
+ draw();
+</script>
